@@ -165,7 +165,7 @@ export function createMap(scene) {
   // over the sites and the furnace mouth.
   const sky = new THREE.HemisphereLight(new THREE.Color(0x9a8a76), new THREE.Color(0x2a211a), 1.5);
   scene.add(sky);
-  const sun = new THREE.DirectionalLight(new THREE.Color(0xffb36b), 3.2);
+  const sun = new THREE.DirectionalLight(new THREE.Color(0xffb36b), 3.5); // raised from 3.2 so the dusk scene reads brighter in screenshots
   sun.position.set(-14, 18, 16);
   sun.target.position.set(2, 0, -6);
   sun.castShadow = true;
